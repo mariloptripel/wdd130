@@ -7,8 +7,8 @@
 :root {
     --primary-color: #E06D06; /* Burned Orange */
     --secondary-color: #EEE4D3; /* White Bone */
-    --background-color: #161616; /* Night Black */
-    --accent-color: #3435FF; /* Palatinate Blue } */
+    --accent1-color: #161616; /* Night Black */
+    --accent2-color: #3435FF; /* Palatinate Blue } */
 
     --paragraph-font: "Open Sans", sans-serif;
     --heading-font: Raleway, sans-serif;
@@ -22,7 +22,7 @@
 }
 
 body {
-    background-color: var(--background-color); 
+    background-color: var(--accent1-color); 
     font-family: var(--paragraph-font);
     font-weight: 300;
     color: var(--secondary-color);
@@ -67,7 +67,7 @@ header {
 }
 
 header div {
-    color: var(--background-color);
+    color: var(--accent1-color);
 }
 
 p {
