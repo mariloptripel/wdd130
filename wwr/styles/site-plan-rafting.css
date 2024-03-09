@@ -10,9 +10,9 @@
     --accent1-color: #161616; /* Night Black */
     --accent2-color: #3435FF; /* Palatinate Blue } */
 
+    --heading-font: "Raleway", sans-serif;
     --paragraph-font: "Open Sans", sans-serif;
-    --heading-font: Raleway, sans-serif;
-    --calloutbox-font: Lora, serif;
+    --calloutbox-font: "Lora", serif;
 
     --nav-background-color:#EEE4D3;
     --nav-link-color: #3435FF;
