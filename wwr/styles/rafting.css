@@ -2,8 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* This is a CSS comment */
-
 :root {
     --primary-color: #E06D06; /* Burned Orange */
     --secondary-color: #EEE4D3; /* White Bone */
@@ -22,12 +20,11 @@
 }
 
 body {
-    background-color: var(--accent1-color); 
+    background-color: var(--secondary-color); 
     font-family: var(--paragraph-font);
     font-weight: 300;
-    color: var(--secondary-color);
-    max-width: 960px;
-    padding:20px;
+    color: var(--accent1-color);
+    max-width: 1280px;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -37,7 +34,7 @@ h1,h2,h3,h4,h5,h6 {
 
 h1 {
     font-weight: 800;
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 h2 {
@@ -45,54 +42,45 @@ h2 {
     font-size: 2.5rem;
 }
 
-h3 {
-    font-size: 2rem;
-    font-weight: 300;
-}
-
-h4 {
-    font-size: 1.5rem;
-    font-weight: 100;
-}
-
-a {
-    font-family: var(--paragraph-font);
-    font-weight: 300;
-    color: var(--secondary-color);
-}
-
-header {
-    padding: 20px;
-    background-color: var(--secondary-color);
-}
-
-header div {
-    color: var(--accent1-color);
-}
-
 p {
-    padding: 25px;
     font-size: 1.2rem;
 }
-
-nav{
-    background-color: var(--nav-background-color);
-    font-size: 1.2rem;
-    display: flex;
+a footer{
+    text-decoration: none;
 }
 
-nav a{
+.hero {
+    position: relative;
+}
+
+.hero img {
     display: block;
-    color:var(--nav-link-color);
-    text-decoration:none;
-    padding: 1rem;
+    width: 100%;
+    height: 100%;
 }
 
-nav a:link, nav a:visited {
-    color: var(--nav-link-color);
+.hero h1 {
+    position: absolute;
+    top: 10%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-nav a:hover {
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-background-color);
+
+.hero article {
+    position: absolute; 
+    bottom: 250px; 
+    left: 20px; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px; 
+    color: white; 
+}
+
+.hero article img {
+    float: right; 
+    margin-left: 10px; 
+    width: 200px;
+    height: auto;
 }
