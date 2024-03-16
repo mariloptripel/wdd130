@@ -43,8 +43,9 @@ h2 {
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
+
 a footer{
     text-decoration: none;
 }
@@ -71,7 +72,7 @@ a footer{
 
 .hero article {
     position: absolute; 
-    bottom: 250px; 
+    bottom: 200px; 
     left: 20px; 
     background-color: rgba(0, 0, 0, 0.5); 
     padding: 20px; 
