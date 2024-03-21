@@ -40,9 +40,9 @@ p {
     padding: 10px;
 }
 
-header, .grid, footer {
-    max-width: 840px;
-    margin:0;
+header, footer, .grid {
+    max-width: 840px ;
+    margin:0, auto;
 }
 
 .grid {
