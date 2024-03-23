@@ -70,7 +70,7 @@ h1,h2,h3,h4,h5,h6 {
 
 h1 {
     font-weight: 800;
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 h2 {
@@ -137,7 +137,7 @@ a footer{
 
 .history-content p {
     color: var(--nav-background-color);
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .history-image img {
@@ -166,7 +166,7 @@ figure img {
 figcaption {
     text-align: center; 
     margin-top: 10px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 400;
     color: var(--primary-color);
 }
