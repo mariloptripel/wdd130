@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form | CSS Quiz | Marisol Lopez</title>
+    <link rel="stylesheet" href="styles/quiz.css"> 
+</head>
+<body>
+    <h1>Basic HTML and CSS Quiz</h1>
+    <main>
+        <form>
+            <ol>
+                <li>
+                    <label for="q1">What does HTML stand for</label><br>
+                    <input type="text" id="q1" name="q1" required>
+                </li>
+                <li>
+                    <label for="q2">What is the purpose of CSS?</label><br>
+                    <textarea id="q2" name="q2" rows="4" required></textarea>
+                </li>
+                <li>
+                    <label for="q3">Which of the following is an HTML element?</label><br>
+                    <select id="q3" name="q3" required>
+                        <option value="" selected disabled>Choose One ...</option>
+                        <option value="div">div</option>
+                        <option value="span">span</option>
+                        <option value="p">p</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="q4">How many types of headings are available in HTML?</label><br>
+                    <input type="number" id="q4" name="q4" min="1" max="6" required>
+                </li>
+            </ol>
+        </fieldset>
+        <button type="submit">Submit Quiz</button>  
+    </main>
+    <footer>
+        <p>©️2024 | HTML Form - Quiz Activity | Marisol Lopez</p>
+    </footer>
+</body>
+</html>
