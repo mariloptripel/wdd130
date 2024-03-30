@@ -26,7 +26,7 @@
 }
 
 header, footer {
-    margin: 0, auto;
+    margin: 0 auto;
     max-width: 1280px;
 }
 
@@ -213,5 +213,5 @@ footer p {
 }
 
 sociallinks img {
-    fill: var(--primary-color)
+    all: var(--primary-color);
 }
