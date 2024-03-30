@@ -81,7 +81,7 @@ h1 {
 
 h2 {
     font-weight: 500;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 p {
@@ -103,10 +103,10 @@ a footer{
 } 
 
 #company-info p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding: 3px;
     margin-top: 5px;
-    font-weight: 400;
+    font-weight: 300;
 }
 .map-container {
     display: flex;
@@ -138,7 +138,7 @@ a footer{
 
 form {
     background-color: var(--secondary-color);
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: var(--paragraph-font); 
     color: var(--accent1-color);
     max-width: 650px; 
@@ -155,7 +155,7 @@ form {
 
 input, select, textarea {
     padding: .5rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .form-group {
@@ -180,7 +180,7 @@ form button[type="submit"] {
     border: none;
     padding: 10px 20px;
     font-family:  var(  --paragraph-font);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     width: 100%;
     margin-top: 20px;
 }
@@ -211,7 +211,6 @@ footer p {
 .sociallinks a {
     margin-left: 10px; 
 }
-
 
 sociallinks img {
     fill: var(--primary-color)
