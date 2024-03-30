@@ -16,8 +16,14 @@
     --nav-link-color: #3435FF;
     --nav-hover-link-color: #E06D06;
     --nav-hover-background-color:#EEE4D3;
+
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 header, footer {
     margin: 0, auto;
@@ -70,6 +76,7 @@ h1,h2,h3,h4,h5,h6 {
 h1 {
     font-weight: 800;
     font-size: 4rem;
+    margin-left: 10px;
 }
 
 h2 {
@@ -85,89 +92,101 @@ a footer{
     text-decoration: none;
 }
 
-.hero {
-    position: relative;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: 600px;
-    object-fit: cover; 
-}
-
-.hero h1 {
-    position: absolute;
-    top: 10%;
-    left: 53%;
-    transform: translate(-50%, -50%);
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-
-.hero article {
-    position: absolute; 
-    bottom: 100px; 
-    left: 100px; 
-    background-color: rgba(0, 0, 0, 0.5); 
-    padding: 20px; 
-    color: white; 
-}
-
-.hero article img {
-    float: right; 
-    margin-left: 10px; 
-    width: 200px;
-    height: auto;
-}
-
-.history-section {
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-    margin-top: 50px;
-    background-color: var(--accent1-color); 
-}
-
-.history-content {
-    padding: 50px;
-}
-
-.history-content p {
-    color: var(--nav-background-color);
-    font-size: 1rem;
-}
-
-.history-image img {
-    max-width: 200px;
-    height: auto;
+#company-info {
+    text-align: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 0.5rem;
     padding: 20px;
-}
+    margin: 0 auto; 
+    max-width: 600px;
+    margin-bottom: 30px;
+} 
 
-.adventures-section{
-    margin-bottom: 20px;
-}
-.adventures-container {
-    display: flex;
-}
-
-figure {
-    height: 200px;
-}
-
-figure img {
-    max-width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-}
-
-figcaption {
-    text-align: center; 
-    margin-top: 10px;
-    font-size: 1.2rem;
+#company-info p {
+    font-size: 1.3rem;
+    padding: 3px;
+    margin-top: 5px;
     font-weight: 400;
-    color: var(--primary-color);
+}
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; 
+    margin-top: 2px; 
+}
+
+#employee-profiles {
+    text-align: center;
+}
+
+.employee {
+    display: inline-block;
+    margin: 20px; 
+}
+
+.employee img {
+    border-radius: 50%; 
+    height: 150px; 
+    width: auto; 
+}
+
+.employee p {
+    margin-top: 20px;
+}
+
+
+form {
+    background-color: var(--secondary-color);
+    font-size: 1.1rem;
+    font-family: var(--paragraph-font); 
+    color: var(--accent1-color);
+    max-width: 650px; 
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 0.5rem;
+}
+
+#contact-form h2 {
+    text-align: center;
+    margin: 20px;
+}
+
+input, select, textarea {
+    padding: .5rem;
+    font-size: 1.1rem;
+}
+
+.form-group {
+    margin-bottom: 15px; 
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+form input[type="text"],
+form textarea,
+form select,
+form input[type="number"] {
+    margin-top: 5px; 
+}
+
+form button[type="submit"] {
+    background-color: var(--primary-color); 
+    color: #fafafa;
+    border: none;
+    padding: 10px 20px;
+    font-family:  var(  --paragraph-font);
+    font-size: 1.5rem;
+    width: 100%;
+    margin-top: 20px;
+}
+
+form button[type="submit"]:hover {
+    background-color: var(--accent1-color); 
 }
 
 

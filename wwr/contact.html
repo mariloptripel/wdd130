@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="This is a page created so our clients can contact us. The purpose of this page is to obtain the information needed to get back to our clients.">
+    <meta name="author" content="Marisol Lopez">   
+    <title>Rocky River Rafting | Contact Us | WDD 130</title>
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+<body>
+    <header>
+            <img src="images/fulllogo.png" alt="This is our logo" width="250">
+            <nav>
+                <a href="index.html" target="_blank">Home</a>
+                <a href="about.html" target="_blank">About Us</a>
+                <a href="trips.html" target="_blank">Trips</a>
+                <a href="contact.html" target="_blank">Contact</a>
+            </nav>
+    </header>
+<main>
+    <h1>Contact Us</h1>
+    <section id="company-info">
+        <h2>Company Information</h2>
+        <p>1253 Arrecifes, Castelar, Buenos Aires, Argentina, 1712</p>
+        <p>Email: contactus@rockyriverrafting.com</p>
+        <p>Phone: 4322-5683</p>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!4v1711837102452!6m8!1m7!1s4O_z-OPDrydMgE6CNy87Mg!2m2!1d-34.64565133036977!2d-58.64987117687686!3f95.363716!4f0!5f0.7820865974627469" width="350" height="200" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    </section>
+    <section id="employee-profiles">
+        <h2>Employee Profiles</h2>
+        <div class="employee">
+            <img src="images/employee1.jpg" alt="Employee 1">
+            <p>Lucía González - Lead Rafting Guide</p>
+        </div>
+        <div class="employee">
+            <img src="images/employee2.jpg" alt="Employee 2">
+            <p>Diego Martínez - Safety Coordinator</p>
+        </div>
+        <div class="employee">
+            <img src="images/employee3.jpg" alt="Employee 3">
+            <p>Matías Fernández - Equipment Manager</p>
+        </div>
+    </section>
+    <section id="contact-form">
+        <h2>Contact Form</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="purpose">Purpose of Message:</label><br>
+                <input type="radio" id="general-inquiry" name="purpose" value="General Inquiry" required>
+                <label for="general-inquiry">General Inquiry</label><br>
+                <input type="radio" id="reservation-question" name="purpose" value="Reservation Question">
+                <label for="reservation-question">Reservation Question</label><br>
+                <input type="radio" id="website-suggestion" name="purpose" value="Website Suggestion">
+                <label for="website-suggestion">Website Suggestion</label>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="newsletter" name="newsletter" value="subscribe">
+                <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+            </div>
+            <button type="submit">Submit Message</button>
+        </form>
+    </section>
+</main>
+<footer>
+    <p>©️2024 | Rocky River Rafting | Marisol Lopez</p>
+    <nav class="sociallinks">
+        <a href="https://facebook.com">
+            <img src="images/facebookicon.svg" alt="Facebook" width="50">
+        </a>
+        <a href="https://twitter.com">
+            <img src="images/twittericon.svg" alt="Twitter" width="50">
+        </a>
+        <a href="https://instagram.com">
+            <img src="images/instagramicon.svg" alt="Instagram" width="50">
+        </a>
+    </nav>
+</footer>
+</body>
+</html>
