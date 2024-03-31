@@ -245,3 +245,58 @@ figcaption {
     margin-top: 20px;
 }
 
+/* Form */
+
+form {
+    background-color: var(--secondary-color);
+    font-size: 1rem;
+    font-family: var(--paragraph-font); 
+    color: var(--accent1-color);
+    max-width: 650px; 
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 0.5rem;
+}
+
+#contact-form h2 {
+    text-align: center;
+    margin: 20px;
+}
+
+input, select, textarea {
+    padding: .5rem;
+    font-size: 1rem;
+}
+
+.form-group {
+    margin-bottom: 15px; 
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+form input[type="text"],
+form textarea,
+form select,
+form input[type="number"] {
+    margin-top: 5px; 
+}
+
+form button[type="submit"] {
+    background-color: var(--primary-color); 
+    color: #fafafa;
+    border: none;
+    padding: 10px 20px;
+    font-family:  var(  --paragraph-font);
+    font-size: 1.3rem;
+    width: 100%;
+    margin-top: 20px;
+}
+
+form button[type="submit"]:hover {
+    background-color: var(--accent1-color); 
+}
+
