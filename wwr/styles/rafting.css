@@ -368,7 +368,7 @@ form button[type="submit"]:hover {
 }
 
 .trip {
-    width: calc(45% - 20px);
+    width: calc(30% - 20px);
     margin: 20px 0;
     padding: 20px;
     border: 1px solid var(--primary-color);
@@ -377,9 +377,11 @@ form button[type="submit"]:hover {
 }
 
 .trip img {
-    width: 100%;
+    width: 90%;
     height: auto;
     border-radius: 10px;
+    display: block;
+    margin: 0 auto;
 }
 
 .trip h2 {
