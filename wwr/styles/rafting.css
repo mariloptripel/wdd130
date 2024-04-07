@@ -317,7 +317,7 @@ form button[type="submit"]:hover {
 .hero h1 {
     position: absolute;
     top: 25%;
-    left: 15%; /* Adjusted left positioning */
+    left: 25%; /* Adjusted left positioning */
     transform: translate(-50%, -50%);
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
