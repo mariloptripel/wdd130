@@ -5,17 +5,13 @@
 
 /* Variables */
 :root {
-    --primary-color: #E06D06; /* Burned Orange */
-    --secondary-color: #EEE4D3; /* White Bone */
-    --accent1-color: #161616; /* Night Black */
-    --accent2-color: #3435FF; /* Palatinate Blue */
+    --primary-color: #161616; 
+    --secondary-color: #fafafa; 
+    --accent1-color: #ea612b; 
+    --accent2-color: #1b45c4; 
     --heading-font: "Raleway", sans-serif;
     --paragraph-font: "Open Sans", sans-serif;
     --calloutbox-font: "Lora", serif;
-    --nav-background-color:#EEE4D3;
-    --nav-link-color: #3435FF;
-    --nav-hover-link-color: #E06D06;
-    --nav-hover-background-color:#EEE4D3;
 }
 
 /* Global Styles */
@@ -35,7 +31,7 @@ header {
     display: grid;
     grid-template-columns: 200px 1fr;
     align-items: center;
-    background-color: var(--accent1-color);
+    background-color: var(--primary-color);
 }
 
 header img {
@@ -45,26 +41,33 @@ header img {
 }
 
 nav {
-    padding: 1rem;
+    padding: 1.5rem 2rem; /* Increase padding */
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    width: 100%;
 }
 
 nav a {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     display: block;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     text-decoration: none;
-    font-size: 1.3rem;
-    font-weight: 700;
+    font-size: 1.4rem; 
+    font-weight: 600; 
+    transition: color 0.3s ease; 
+    margin-left: 5rem;
+}
+
+nav a:hover {
+    color: var(--accent1-color); /* Change text color on hover */
 }
 
 body {
-    background-color: var(--secondary-color); 
+    background-color: var(--primary-color); 
     font-family: var(--paragraph-font);
     font-weight: 300;
-    color: var(--accent1-color);
+    color: var(--secondary-color);
     max-width: 1280px;
     width: 100%;
     margin: 0 auto; /* Centers the page horizontally */
@@ -73,7 +76,7 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 h1 {
@@ -100,13 +103,12 @@ footer{
     justify-content: space-between; 
     align-items: center; 
     margin-top: 60px; 
-    background-color: var(--accent1-color);
+    background-color: var(--secondary-color);
 }
 
 footer p {
     text-align: center; 
-    flex: 1; 
-    color: var(--nav-background-color);
+    color: var(--primary-color);
 }
 
 .sociallinks {
@@ -134,7 +136,7 @@ footer p {
     top: 10%;
     left: 53%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: var(--secondary-color);
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -144,7 +146,7 @@ footer p {
     left: 100px; 
     background-color: rgba(0, 0, 0, 0.5); 
     padding: 20px; 
-    color: white; 
+    color: var(--secondary-color); 
 }
 
 .hero article img {
@@ -317,9 +319,9 @@ form button[type="submit"]:hover {
 .hero h1 {
     position: absolute;
     top: 25%;
-    left: 25%; /* Adjusted left positioning */
+    left: 25%; 
     transform: translate(-50%, -50%);
-    color: white;
+    color: var(--secondary-color);
     background-color: rgba(0, 0, 0, 0.5);
     font-size: 4rem; /* Increased font size */
     padding: 10px 20px; /* Added padding for better readability */
@@ -346,7 +348,7 @@ form button[type="submit"]:hover {
     margin-top: 20px;
     padding: 20px 40px;
     background-color: var(--primary-color); /* Use your primary color */
-    color: white;
+    color: var(--secondary-color);
     font-size: 1.4rem;
     font-weight: 700;
     text-decoration: none;
@@ -414,7 +416,7 @@ form button[type="submit"]:hover {
 
 .trip-table th {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--secondary-color);
 }
 
 /* Hero Section */
@@ -435,13 +437,16 @@ form button[type="submit"]:hover {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: var(--secondary-color);
     font-size: 8rem; 
     z-index: 1; 
     text-align: center; 
     width: 80%; 
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
     margin: 0; 
+    padding: 20px;
+    border: 2px solid var(--secondary-color); 
+    border-radius: 10px; 
 }
 
 
@@ -495,8 +500,8 @@ form button[type="submit"]:hover {
 .call-to-action .button {
     display: inline-block;
     padding: 20px 40px; 
-    background-color: var(--primary-color); 
-    color: white;
+    background-color: var(--accent2-color); 
+    color: var(--secondary-color);
     font-size: 2rem;
     font-weight: 700;
     text-decoration: none;
@@ -504,9 +509,6 @@ form button[type="submit"]:hover {
     transition: background-color 0.3s ease;
 }
 
-.call-to-action .button:hover {
-    background-color: var(--accent1-color); 
-}
 
 /* Newsletter Section */
 .home-newsletter {
@@ -523,7 +525,7 @@ form button[type="submit"]:hover {
 
 /* Lines between sections */
 section {
-    border-top: 1.5px solid var(--primary-color); 
+    border-top: 1.5px solid var(--accent1-color); 
     padding-top: 50px; 
     margin-top: 50px; 
 }
