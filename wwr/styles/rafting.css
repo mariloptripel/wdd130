@@ -41,7 +41,7 @@ header img {
 }
 
 nav {
-    padding: 1.5rem 2rem; /* Increase padding */
+    padding: 1.5rem 2rem; 
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -60,7 +60,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--accent1-color); /* Change text color on hover */
+    color: var(--accent1-color); 
 }
 
 body {
@@ -70,7 +70,7 @@ body {
     color: var(--secondary-color);
     max-width: 1280px;
     width: 100%;
-    margin: 0 auto; /* Centers the page horizontally */
+    margin: 0 auto; 
     
 }
 
@@ -91,65 +91,78 @@ h2 {
 }
 
 p {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 a footer{
     text-decoration: none;
 }
 
-footer{
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    margin-top: 60px; 
-    background-color: var(--secondary-color);
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    background-color: rgba(250, 250, 250, 0.9);
+    text-align: center; 
 }
 
 footer p {
-    text-align: center; 
     color: var(--primary-color);
+    margin: 0 20px; 
 }
 
 .sociallinks {
-    display: flex; 
+    display: flex;
+    align-items: center; 
 }
 
 .sociallinks a {
-    margin-left: 10px; 
+    margin-left: 10px;
 }
 
 
-.hero {
+.about-hero {
     position: relative;
 }
 
-.hero img {
+.about-hero img {
     display: block;
     width: 100%;
     height: 600px;
     object-fit: cover; 
 }
 
-.hero h1 {
+.about-hero h1 {
     position: absolute;
-    top: 10%;
-    left: 53%;
+    top: 15%;
+    left: 25%; 
     transform: translate(-50%, -50%);
     color: var(--secondary-color);
-    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.hero article {
+.about-hero article {
     position: absolute; 
-    bottom: 100px; 
-    left: 100px; 
-    background-color: rgba(0, 0, 0, 0.5); 
+    bottom: 90px; 
+    left: 300px;
+    background-color: rgba(0, 0, 0, 0.7); 
     padding: 20px; 
-    color: var(--secondary-color); 
+    border-radius: 10px; 
+    overflow: hidden; 
+    max-width: 800px; 
+    display: flex;
+    align-items: center;
 }
 
-.hero article img {
+.about-hero article p {
+    color: var(--secondary-color);
+    text-align: center;
+    flex: 2; 
+    font-size: 1.5rem;
+}
+.about-hero article img {
     float: right; 
     margin-left: 10px; 
     width: 200px;
@@ -161,16 +174,23 @@ footer p {
     align-items: center; 
     justify-content: space-between; 
     margin-top: 50px;
-    background-color: var(--accent1-color); 
+    border-radius: 10px; 
+    overflow: hidden; 
 }
 
 .history-content {
-    padding: 50px;
+    padding: 30px;
 }
 
 .history-content p {
-    color: var(--nav-background-color);
-    font-size: 1rem;
+    margin: 20px;
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+}
+
+.history-content h2 {
+    color: var(--secondary-color);
+    font-weight: 700;
 }
 
 .history-image img {
@@ -179,8 +199,14 @@ footer p {
     padding: 20px;
 }
 
-.adventures-section{
+.adventures-section {
     margin-bottom: 20px;
+}
+
+.adventures-section h2 {
+    margin-bottom: 30px;
+    color: var(--secondary-color);
+    font-weight: 700;
 }
 
 .adventures-container {
@@ -205,11 +231,11 @@ figcaption {
     color: var(--primary-color);
 }
 
-/*  Styles for contact CSS */
+/*  Contact Page */
 
 #company-info {
     text-align: center;
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--accent1-color);
     border-radius: 0.5rem;
     padding: 20px;
     margin: 0 auto; 
@@ -251,16 +277,22 @@ figcaption {
 }
 
 /* Form */
+.contact-page {
+    background-color: var(--secondary-color)
+}
 
-form {
-    background-color: var(--secondary-color);
+.contact-page h1,h2,h3,p {
+    color: var(--primary-color);
+}
+
+#contact-form form {
     font-size: 1rem;
     font-family: var(--paragraph-font); 
-    color: var(--accent1-color);
+    color: var(--primary-color);
     max-width: 650px; 
     margin: 0 auto;
     padding: 2rem;
-    border: 1px solid var(--primary-color);
+    border: 1px solid var(--accent1-color);
     border-radius: 0.5rem;
 }
 
@@ -283,16 +315,17 @@ label {
     padding-right: 1rem;
 }
 
-form input[type="text"],
-form textarea,
-form select,
-form input[type="number"] {
+#contact-form form input[type="text"],
+#contact-form form textarea,
+#contact-form form select,
+#contact-form form input[type="number"] {
     margin-top: 5px; 
 }
 
-form button[type="submit"] {
+#contact-form form button[type="submit"] {
     background-color: var(--primary-color); 
     color: #fafafa;
+    font-weight:bold ;
     border: none;
     padding: 10px 20px;
     font-family:  var(  --paragraph-font);
@@ -301,10 +334,17 @@ form button[type="submit"] {
     margin-top: 20px;
 }
 
-form button[type="submit"]:hover {
+#contact-form form button[type="submit"]:hover {
     background-color: var(--accent1-color); 
 }
 
+.contact-page footer {
+    background-color: var(--primary-color);
+}
+
+.contact-page footer p {
+    color: var(--secondary-color);
+}
 /* Trips Page */
 
 /* Hero Image */
@@ -318,46 +358,43 @@ form button[type="submit"]:hover {
 
 .hero h1 {
     position: absolute;
-    top: 25%;
+    top: 15%;
     left: 25%; 
     transform: translate(-50%, -50%);
     color: var(--secondary-color);
-    background-color: rgba(0, 0, 0, 0.5);
-    font-size: 4rem; /* Increased font size */
-    padding: 10px 20px; /* Added padding for better readability */
+    font-size: 4rem; 
+    padding: 10px 20px; 
 }
-
 
 /* Intro  */
 .intro {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-weight: 500;
     padding: 20px;
     margin: 20px auto;
     max-width: 800px;
     text-align: center;
-    margin-bottom: 20px; /* Add some spacing between intro and CTA */
+    margin-bottom: 20px; 
+    margin-top: 30px;
 }
 
 .intro p {
     font-size: 1.3rem;
+    color: var(--secondary-color);
+    margin-bottom: 30px;
 }
 
 .book-btn {
     display: inline-block;
     margin-top: 20px;
     padding: 20px 40px;
-    background-color: var(--primary-color); /* Use your primary color */
+    background-color: var(--accent2-color); 
     color: var(--secondary-color);
     font-size: 1.4rem;
     font-weight: 700;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-}
-
-.book-btn:hover {
-    background-color: var(--accent1-color); /* Use your accent color */
 }
 
 /*  Grid */
@@ -373,7 +410,6 @@ form button[type="submit"]:hover {
     width: calc(30% - 20px);
     margin: 20px 0;
     padding: 20px;
-    border: 1px solid var(--primary-color);
     border-radius: 10px;
     background-color: var(--secondary-color);
 }
@@ -405,24 +441,25 @@ form button[type="submit"]:hover {
 .trip-table table {
     width: 100%;
     border-collapse: collapse;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .trip-table th,
 .trip-table td {
     padding: 10px;
-    border: 1px solid var(--accent1-color);
     text-align: center;
 }
 
 .trip-table th {
-    background-color: var(--primary-color);
+    background-color: var(--accent2-color);
     color: var(--secondary-color);
 }
 
 /* Hero Section */
 .home-hero {
     position: relative;
-    margin-bottom: 50px; /* Add space below the hero section */
+    margin-bottom: 50px; 
 }
 
 .home-hero img {
@@ -455,6 +492,8 @@ form button[type="submit"]:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    background-color: var(--secondary-color);
+    border: none;
 }
 
 .home-grid-item p {
@@ -493,8 +532,9 @@ form button[type="submit"]:hover {
 .call-to-action h2 {
     margin-bottom: 50px;
     margin-top: 20px;
-    font-size: 3rem; 
+    font-size: 2rem; 
     font-weight: 700;
+    color: var(--secondary-color);
 }
 
 .call-to-action .button {
@@ -509,7 +549,6 @@ form button[type="submit"]:hover {
     transition: background-color 0.3s ease;
 }
 
-
 /* Newsletter Section */
 .home-newsletter {
     margin-bottom: 60px; 
@@ -517,9 +556,44 @@ form button[type="submit"]:hover {
 }
 
 .home-newsletter h2 {
-    margin-bottom: 60px;
-    font-size: 3rem; 
+    margin-bottom: 30px;
+    color: var(--secondary-color);
+    font-size: 2rem; 
     font-weight: 700; 
+}
+
+.home-newsletter form {
+    font-size: 1.1rem;
+    font-family: var(--paragraph-font); 
+    color: var(--primary-color);
+    max-width: 650px; 
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+input, select, textarea {
+    padding: .5rem;
+    font-size: 1rem;
+}
+
+.home-newsletter form input[type="text"],
+.home-newsletter form textarea,
+.home-newsletter form select,
+.home-newsletter form input[type="number"] {
+    margin-top: 20px; 
+}
+
+.home-newsletter form button[type="submit"] {
+    background-color: var(--accent1-color); 
+    color: var(--secondary-color);
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    font-family:  var(  --paragraph-font);
+    font-size: 1.8rem;
+    width: 60%;
+    margin-top: 20px;
+    border-radius: 5px;
 }
 
 
