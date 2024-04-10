@@ -483,7 +483,7 @@ label {
     left: 50%;
     transform: translate(-50%, -50%);
     color: var(--secondary-color);
-    font-size: 8rem; 
+    font-size: 6rem; 
     z-index: 1; 
     text-align: center; 
     width: 80%; 
