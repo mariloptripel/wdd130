@@ -363,7 +363,7 @@ label {
 .hero h1 {
     position: absolute;
     top: 25%;
-    left: 15%; 
+    left: 20%; 
     transform: translate(-50%, -50%);
     color: var(--secondary-color);
     font-size: 4rem; 
@@ -394,7 +394,7 @@ label {
     padding: 20px 40px;
     background-color: var(--accent2-color); 
     color: var(--secondary-color);
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     font-weight: 700;
     text-decoration: none;
     border-radius: 5px;
