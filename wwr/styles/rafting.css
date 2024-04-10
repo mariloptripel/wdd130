@@ -136,10 +136,10 @@ footer p {
 .about-hero h1 {
     position: absolute;
     top: 15%;
-    left: 25%; 
+    left: 30%; 
     transform: translate(-50%, -50%);
     color: var(--secondary-color);
-    font-size: 5rem;
+    font-size: 4rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
